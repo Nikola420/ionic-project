@@ -13,7 +13,7 @@ const routes: Routes = [
   },
   {
     path: 'filter',
-    loadChildren: () => import('./filter/filter.module').then( m => m.FilterPageModule)
+    loadChildren: () => import('./pages/filter/filter.module').then( m => m.FilterPageModule)
   },
   {
     path: 'login',
