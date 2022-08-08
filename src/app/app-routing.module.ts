@@ -18,6 +18,18 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'order',
+    loadChildren: () => import('./pages/order/order.module').then( m => m.OrderPageModule)
+  },
+  {
+    path: 'order',
+    loadChildren: () => import('./pages/popup/order/order.module').then( m => m.OrderPageModule)
+  },
+  {
+    path: 'order-menu',
+    loadChildren: () => import('./pages/popup/order-menu/order-menu.module').then( m => m.OrderMenuPageModule)
   }
 ];
 
