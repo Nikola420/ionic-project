@@ -39,6 +39,14 @@ const routes: Routes = [
   {
     path: 'folder',
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+  },
+  {
+    path: 'profile',
+    loadChildren: () => import('./pages/profile/profile.module').then( m => m.ProfilePageModule)
+  },
+  {
+    path: 'chef-details',
+    loadChildren: () => import('./pages/chef-details/chef-details.module').then( m => m.ChefDetailsPageModule)
   }
 ];
 

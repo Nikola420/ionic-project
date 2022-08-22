@@ -20,7 +20,7 @@ export class PaymentPage implements OnInit {
       });
     });
   }
-
+  
   async presentLoading(){
     const loading = await this.loadingController.create({
       message:"Please wait ..",
